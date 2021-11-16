@@ -4,7 +4,7 @@
       {{ character.name }}
     </h2>
     <div class="absolute top-1 right-2">
-      <span class="text-white text-lg">{{ totalScore }}</span>
+      <span class="text-white text-2xl">{{ totalScore }}</span>
     </div>
     <div class="flex justify-between items-center">
       <div class="w-12">
@@ -21,7 +21,6 @@
         <b-checkbox
           v-for="(score, index) of characterScore"
           :key="index"
-          class="dc__checkbox"
           :value="score"
           type="is-light"
           @input="() => changeScore(score, index)"
@@ -51,9 +50,3 @@ export default class ScoreCharacter extends Vue {
   }
 }
 </script>
-
-<style>
-.dc__checkbox span.check {
-  border-radius: 50% !important;
-}
-</style>

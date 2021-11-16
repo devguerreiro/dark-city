@@ -12,8 +12,7 @@
   box-sizing: border-box;
 }
 
-html, body, #app {
-  height: 100vh;
+html {
   font-size: 24px !important;
 }
 </style>

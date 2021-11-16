@@ -8,6 +8,8 @@ $radio-size: 1em;
 
 // Checkbox
 $checkbox-size: 1em;
+$checkbox-border-color: $light;
+$checkbox-border-radius: 50%;
 
 // Import Bulma's core
 @import "~bulma/sass/utilities/_all";
