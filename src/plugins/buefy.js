@@ -1,6 +1,7 @@
-// import Vue from 'vue';
-// import { Button } from 'buefy';
+import Vue from 'vue';
+import { Image, Radio } from 'buefy';
 
 import '@/styles/buefy.scss';
 
-// Vue.use(Button);
+Vue.use(Image);
+Vue.use(Radio);
