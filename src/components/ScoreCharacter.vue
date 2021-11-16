@@ -4,7 +4,7 @@
       {{ character.name }}
     </h2>
     <div class="absolute top-1 right-2">
-      <span class="text-white">{{ totalScore }}</span>
+      <span class="text-white text-lg">{{ totalScore }}</span>
     </div>
     <div class="flex justify-between items-center">
       <div class="w-12">
@@ -18,11 +18,13 @@
         />
       </div>
       <div class="flex justify-center">
-        <b-radio
-          v-for="(score, index) of character.score"
+        <b-checkbox
+          v-for="(score, index) of characterScore"
           :key="index"
+          class="dc__checkbox"
           :value="score"
           type="is-light"
+          @input="() => changeScore(score, index)"
         />
       </div>
     </div>
@@ -38,8 +40,20 @@ import { Character } from '@/interfaces/character';
 export default class ScoreCharacter extends Vue {
   @Prop(Object) private readonly character!: Character
 
+  private readonly characterScore: Array<boolean> = [...this.character.score]
+
   private get totalScore(): number {
-    return this.character.score.filter((score) => score).length;
+    return this.characterScore.filter((score) => score).length;
+  }
+
+  private changeScore(score: boolean, index: number): void {
+    this.characterScore.splice(index, 1, !score);
   }
 }
 </script>
+
+<style>
+.dc__checkbox span.check {
+  border-radius: 50% !important;
+}
+</style>

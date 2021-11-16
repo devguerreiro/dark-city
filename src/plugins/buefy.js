@@ -1,7 +1,7 @@
 import Vue from 'vue';
-import { Image, Radio } from 'buefy';
+import { Image, Checkbox } from 'buefy';
 
 import '@/styles/buefy.scss';
 
 Vue.use(Image);
-Vue.use(Radio);
+Vue.use(Checkbox);
