@@ -14,5 +14,6 @@
 
 html, body, #app {
   height: 100vh;
+  font-size: 24px !important;
 }
 </style>

@@ -9,6 +9,9 @@ module.exports = {
         dark: 'var(--color-dark)',
         light: 'var(--color-light)',
       },
+      fontFamily: {
+        sans: ['Road Rage', 'cursive'],
+      },
     },
   },
   variants: {

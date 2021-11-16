@@ -1,13 +1,13 @@
 <template>
   <div class="box relative">
-    <h2 class="text-center text-white">
+    <h2 class="text-center text-white text-xl">
       {{ character.name }}
     </h2>
     <div class="absolute top-1 right-2">
       <span class="text-white">{{ totalScore }}</span>
     </div>
     <div class="flex justify-between items-center">
-      <div class="w-16">
+      <div class="w-12">
         <b-image
           :src="character.photo"
           :alt="`Ícone do personagem ${character.name}`"
@@ -17,12 +17,11 @@
           ratio="9by9"
         />
       </div>
-      <div class="flex">
+      <div class="flex justify-center">
         <b-radio
           v-for="(score, index) of character.score"
           :key="index"
           :value="score"
-          size="is-medium"
           type="is-light"
         />
       </div>

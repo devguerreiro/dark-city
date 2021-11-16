@@ -3,7 +3,7 @@
     <dc-score-character
       v-for="(character, index) of characters"
       :key="index"
-      class="bg-primary"
+      class="bg-primary p-2 mb-3"
       :character="character"
     />
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto h-full">
     <main class="h-full">
-      <section class="h-full flex flex-col justify-center items-center px-4">
+      <section class="h-full flex flex-col justify-center items-center px-3">
         <div class="h-1/5 flex items-center">
           <h1 class="text-center text-white text-2xl">
             Dark City Annotator
