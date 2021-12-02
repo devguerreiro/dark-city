@@ -4,7 +4,7 @@
       {{ character.name }}
     </h2>
     <div class="absolute top-1 right-2">
-      <span class="text-light text-2xl">{{ character.totalScore }}</span>
+      <span class="text-dark text-2xl">{{ character.totalScore }}</span>
     </div>
     <div class="flex justify-between items-center">
       <div class="w-12">

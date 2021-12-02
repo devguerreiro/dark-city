@@ -1,13 +1,15 @@
+import { TScore } from '@/types/score';
+
 export const maxScore = 4;
 
 export interface ICharacter {
   readonly name: string,
   readonly iconPath: string,
-  readonly score: Array<boolean>,
+  score: TScore,
 }
 
 export class Character implements ICharacter {
-  readonly score: Array<boolean> = Array(maxScore).fill(false);
+  score: TScore = this.getDefaultScore()
 
   constructor(readonly name: string, readonly iconPath: string) {
     this.name = name;
@@ -23,6 +25,10 @@ export class Character implements ICharacter {
   }
 
   public resetScore(): void {
-    this.score.fill(false);
+    this.score = this.getDefaultScore();
+  }
+
+  private getDefaultScore() {
+    return Array(maxScore).fill(false);
   }
 }
