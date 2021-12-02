@@ -25,10 +25,14 @@ export class Character implements ICharacter {
   }
 
   public resetScore(): void {
-    this.score = this.getDefaultScore();
+    const hasAtLeastOneScore = this.score.some((s) => s);
+
+    if (hasAtLeastOneScore) {
+      this.score = this.getDefaultScore();
+    }
   }
 
-  private getDefaultScore() {
+  private getDefaultScore(): TScore {
     return Array(maxScore).fill(false);
   }
 }
