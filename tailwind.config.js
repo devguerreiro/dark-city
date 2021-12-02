@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       colors: {
         primary: 'var(--color-primary)',
-        secondary: 'var(--color-secondary)',
         dark: 'var(--color-dark)',
         light: 'var(--color-light)',
+        blood: 'var(--color-blood)',
       },
       fontFamily: {
         sans: ['Road Rage', 'cursive'],

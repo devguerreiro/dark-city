@@ -1,5 +1,6 @@
 // Custom Colors
-$primary: #0562c6;
+$primary: #677383;
+$blood: #CC1100;
 $dark: #2d2c31;
 $light: #d3e5f3;
 
@@ -8,11 +9,13 @@ $radio-size: 1em;
 
 // Checkbox
 $checkbox-size: 1em;
-$checkbox-border-color: $light;
+$checkbox-border-color: $blood;
 $checkbox-border-radius: 50%;
+$checkbox-active-background-color: $blood;
+$checkbox-checkmark-color: $blood;
 
-// Import Bulma's core
-@import "~bulma/sass/utilities/_all";
+// Lists and maps
+$custom-colors: ("blood": $blood);
 
 // Import Bulma and Buefy styles
 @import "~bulma";

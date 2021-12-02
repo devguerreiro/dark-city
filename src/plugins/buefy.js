@@ -1,7 +1,8 @@
 import Vue from 'vue';
-import { Image, Checkbox } from 'buefy';
+import { Button, Checkbox, Image } from 'buefy';
 
 import '@/styles/buefy.scss';
 
-Vue.use(Image);
+Vue.use(Button);
 Vue.use(Checkbox);
+Vue.use(Image);
