@@ -46,7 +46,7 @@ export default class Home extends Vue {
     new Character('Demônio', '/icons/demonio.svg'),
     new Character('Vampiro', '/icons/vampiro.svg'),
     new Character('Lobisomem', '/icons/lobisomem.svg'),
-    new Character('Zumbie', '/icons/zumbie.svg'),
+    new Character('Zumbi', '/icons/zumbie.svg'),
     new Character('Caçador', '/icons/cacador.svg'),
     new Character('Sacerdote', '/icons/sacerdote.svg'),
   ]
